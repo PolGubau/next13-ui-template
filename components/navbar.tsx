@@ -1,24 +1,11 @@
 "use client";
-import { link as linkStyles } from "@nextui-org/theme";
-
-import { siteConfig } from "@/config/site";
-import NextLink from "next/link";
-import clsx from "clsx";
-
+import { GithubIcon, HeartFilledIcon, SearchIcon } from "@/components/icons";
 import { ThemeSwitch } from "@/components/theme-switch";
+import { siteConfig } from "@/config/site";
 import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-} from "@/components/icons";
-
-import {
+  Button,
   Input,
   Kbd,
-  Button,
-  Navbar as NextUINavbar,
   Link,
   NavbarBrand,
   NavbarContent,
@@ -26,7 +13,11 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
+  Navbar as NextUINavbar,
 } from "@nextui-org/react";
+import { link as linkStyles } from "@nextui-org/theme";
+import clsx from "clsx";
+import NextLink from "next/link";
 import { TbBeach } from "react-icons/tb";
 
 export const Navbar = () => {
